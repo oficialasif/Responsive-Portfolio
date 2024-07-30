@@ -1,25 +1,35 @@
-// nav hamburg menu
-// const menuIcon = document.getElementById('menu-icon');
-//     const navbar = document.getElementById('navbar');
+    // document.addEventListener('DOMContentLoaded', function() {
+    //     const menuIcon = document.getElementById('menu-icon');
+    //     const navbar = document.querySelector('.navbar');
+        
+    //     menuIcon.addEventListener('click', function() {
+    //         navbar.classList.toggle('active');
+    //     });
+        
+    //     document.addEventListener('click', function(event) {
+    //         if (!navbar.contains(event.target) && !menuIcon.contains(event.target)) {
+    //             navbar.classList.remove('active');
+    //         }
+    //     });
+    // });
 
-//     menuIcon.addEventListener('click', () => {
-//         navbar.classList.toggle('active');
-//     });
 
 
-// home
 
-// var typed = new Typed(".multiple-text", {
-//     strings: ["Web Developer", "Frontend Developer", "Backend Developer", "MERN Developer"],
-//     typeSpeed: 100,
-//     backSpeed: 100,
-//     backDelay: 1000,
-//     loop: true
-// });
-
-// const menuIcon = document.getElementById('menu-icon');
-// const navbar = document.getElementById('navbar');
-
-// menuIcon.addEventListener('click', () => {
-//     navbar.classList.toggle('active');
-// });
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuIcon = document.getElementById('menu-icon');
+        const navbar = document.querySelector('.navbar');
+        
+        menuIcon.addEventListener('click', function() {
+            navbar.classList.toggle('active');
+            menuIcon.classList.toggle('active');
+        });
+        
+        document.addEventListener('click', function(event) {
+            if (!navbar.contains(event.target) && !menuIcon.contains(event.target)) {
+                navbar.classList.remove('active');
+                menuIcon.classList.remove('active');
+            }
+        });
+    });
+    
